@@ -1,5 +1,5 @@
 <template>
     <div>
         Amber 2
-    <div>
+    </div>
 </template>
