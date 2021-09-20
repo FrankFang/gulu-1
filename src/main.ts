@@ -4,6 +4,7 @@ import './index.scss'
 import { createWebHashHistory, createRouter } from 'vue-router'
 import Home from './views/Home.vue'
 import Doc from './views/Doc.vue'
+
 const history = createWebHashHistory()
 const router = createRouter({
     history: history,
@@ -12,6 +13,7 @@ const router = createRouter({
         { path: '/doc', component: Doc }
     ]
 })
+
 const app = createApp(App)
 app.use(router)
 app.mount('#app')
