@@ -1,34 +1,19 @@
 <template>
-    <button class="gulu-button" :class="classes">
+  <button class="gulu-button" :class="{[`gulu-theme-${theme}`]: theme}">
     <slot />
   </button>
 </template>
 <script lang="ts">
-import { computed } from "vue";
 export default {
   props: {
     theme: {
       type: String,
       default: "button",
     },
-     size: {
-      type: String,
-      default: "normal",
-    },
-  },
-  setup(props) {
-    const { theme, size } = props;
-    const classes = computed(() => {
-      return {
-        [`gulu-theme-${theme}`]: theme,
-        [`gulu-size-${size}`]: size,
-      };
-    });
-    return { classes };
   },
 };
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 $h: 32px;
 $border-color: #d9d9d9;
 $color: #333;
@@ -63,4 +48,4 @@ $radius: 4px;
     border: 0;
   }
 }
-</style> 
+</style>
