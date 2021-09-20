@@ -58,7 +58,7 @@ export default {
     }
     const cancel = () => {
       context.emit('cancel')
-      close()
+      props.cancel?.()
     }
     return {
       close,
