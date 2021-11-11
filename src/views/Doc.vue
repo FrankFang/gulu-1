@@ -40,10 +40,7 @@
 
 <script lang="ts">
 import Topnav from "../components/Topnav.vue";
-import {
-  inject,
-  Ref
-} from "vue";
+import {inject,Ref} from "vue";
 export default {
   components: { 
       Topnav 

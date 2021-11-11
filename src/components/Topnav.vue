@@ -2,7 +2,7 @@
 <div class="topnav">
   <router-link to="/" class="logo">
       <svg class="icon">
-      <use xlink:href="#icon-king"></use>
+      <use xlink:href="#icon-King"></use>
     </svg>
   </router-link>
   <ul class="menu">
@@ -17,10 +17,7 @@
 </template>
 
 <script lang="ts">
-import {
-  inject,
-  Ref
-} from "vue";
+import {inject,Ref} from "vue";
 export default {
     props: {
     toggleMenuButtonVisible: {

@@ -3,13 +3,8 @@
 </template>
 
 <script lang="ts" setup>
-import {
-  ref,
-  provide
-} from "vue";
-import {
-  router
-} from "./router";
+import {ref,provide} from "vue";
+import {router} from "./router";
 
 const width = document.documentElement.clientWidth;
 const menuVisible = ref(width <= 500 ? false : true);
