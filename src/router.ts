@@ -22,7 +22,7 @@ export const router = createRouter({
             path: "/doc",
             component: Doc,
             children: [
-                { path: "", component: redirect: '/doc/intro'  },
+                { path: "", redirect: '/doc/intro'  },
                 { path: "intro", component: md(intro) },
                 { path: "get-started", component: md(getStarted) },
                 { path: "install", component: md(install) },             { path: "switch", component: SwitchDemo },
